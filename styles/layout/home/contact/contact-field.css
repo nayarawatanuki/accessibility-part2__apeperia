@@ -1,0 +1,118 @@
+.contact-field {
+    margin: .8em auto;
+    max-width: 600px;
+    position: relative;
+}
+
+.contact-field__label:before {
+    background-color: #fff;
+    border: 1px solid #7D7D7D;
+    color: transparent;
+    content:'';
+    display: inline-block;
+    height: 20px;
+    line-height: 1;
+    text-align: center;
+    transform: translate(-7px, -3px);
+    transition: .2s ease-in;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.contact-field__checkbox:checked + .contact-field__label:before {
+    background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
+    color: #fff;
+    content: 'x';
+}
+
+.contact-field__checkbox {
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+}
+
+.contact-field-icone {
+    left: -2em;
+    position: absolute;
+    top: 2.5em;
+    width: 1.5em;
+}
+
+.contact-field label,
+.contact-field input,
+.contact-field textarea {
+    display: block;
+    text-align: left;
+    width: 100%;
+} 
+
+.contact-field label {
+    margin-bottom: 5px;
+    margin-left: 8px;
+} 
+
+.contact-field input,
+.contact-field textarea {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    min-height: 50px;
+    outline: 0;
+    padding: .5em;
+} 
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+    border: 2px solid #222;
+} 
+
+.contact-field-disable {
+    background-color: #ddd;
+}
+
+.contact-field__msg, 
+.contact-form__validation {
+    color: #FD1242;
+    display: inline-block;
+    font-size: .9em;
+    font-weight: bold;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.contact-field .contact-field--valid {
+    background-color: #fff;
+    border: 2px solid #219653;
+    position: relative;
+}
+
+.contact-field .contact-field--validError {
+    background-color: #fff;
+    border: 2px solid #FF0000;
+    position: relative;
+}
+
+.contact-field--success:before {
+    background-image: url(../../../../img/home/contact-form/validation-success.png);
+    content: '';
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    right: .4em;
+    transform: translateY(112%) scale(.65);
+    width: 33px;
+    z-index: 1;
+}
+
+.contact-field--error:before {
+    background-image: url(../../../../img/home/contact-form/validation-error.png);
+    content: '';
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    right: .4em;
+    transform: translateY(112%) scale(.65);
+    width: 33px;
+    z-index: 1;
+}
+

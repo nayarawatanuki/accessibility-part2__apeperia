@@ -1,0 +1,44 @@
+@import 'contact-field.css';
+@import 'contact-form.css';
+
+.contact {
+    background-color: #F7F4F4;
+    text-align: center;
+    text-align: left;
+}
+
+.contact-title {
+    text-align: center;
+}
+
+.contact-wink {
+    color: #EB5757;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.contact-form-fieldset {
+    border: 0;
+}
+
+.contact-form__legend {
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+.contact-field__button {
+    background: transparent;
+    border: 1px solid #B72E2E;
+    color: #B72E2E;
+    display: block;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.contact-field__button:hover,
+.contact-field__button:focus {
+    background-color: #B72E2E;
+    color: #fff;
+}

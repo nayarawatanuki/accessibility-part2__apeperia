@@ -1,0 +1,37 @@
+.institutional {
+    color: #666;
+    text-align: center;
+}
+
+.institutional__address {
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.5;
+    margin: 1.2em 0;
+}
+
+.institutional__telephone {
+    font-size: 1.2em;
+}
+
+.institutional__video {
+    display: inline-block;
+    margin-top: 30px;
+    max-width: 550px;
+    width: 100%;
+}
+
+@media (min-width: 830px) {
+
+    .institutional__column {
+        float: left;
+        text-align: left;
+        width: 40%;
+    }
+
+    .institutional__video {
+        margin-top: 0;
+        width: 40%;
+    }
+
+}

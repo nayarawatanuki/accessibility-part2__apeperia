@@ -1,0 +1,117 @@
+@import 'layout/home/header.css';
+@import 'layout/home/highlight.css';
+@import 'layout/home/differentials.css';
+@import 'layout/home/about.css';
+@import 'layout/home/plans.css';
+@import 'layout/home/blog.css';
+@import 'layout/home/articles';
+@import 'layout/home/highlights/index.css';
+@import 'layout/home/contact/index.css';
+@import 'layout/home/institutional.css';
+@import 'layout/home/footer.css';
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+li[aria-hidden='true'] {
+    display: none;
+}
+
+li[aria-hidden='false'] {
+    display: block;
+}
+
+
+.overlayDialog:before {
+    background-color: rgba(0, 0, 0, .4);
+    content: '';
+    display: block;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+.skip-nav,
+.skip-nav:active,
+.skip-nav:focus,
+.skip-nav:hover {
+    color: transparent;
+    display: block;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    width: 1px;
+    white-space: nowrap;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+}
+
+
+.read-only {
+    position: absolute;
+    z-index: -1;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 3.5em 5%;
+}
+
+.title-default {
+    color: #4F4C4C;
+    font-family: 'Montserrat', serif;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.button-default {
+    border-radius: 5px;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-size: 1.2em;
+    outline: 0;
+    padding: .3em 1em;
+    text-decoration: none;
+}
+
+.button-default:hover,
+.button-default:focus {
+    background-image: linear-gradient(rgba(255, 255, 255, .05), rgba(255, 255, 255, .05));
+    cursor: pointer;
+}
+
+.button-default--small {
+    font-size: 1em;
+}
+
+@media (min-width: 830px) {
+    .container {
+        padding: 3.5em 2em;
+        padding-left: 0;
+        padding-right: 0;
+        width: 1200px;
+        width: 800px;
+    }
+}
+
+@media (min-width: 1065px) {
+    .container {
+        width: 1000px;
+    }
+}

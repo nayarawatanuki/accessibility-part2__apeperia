@@ -1,0 +1,61 @@
+@import 'dialogNewsletter.css';
+
+.highlights {
+    background-color: #DCEDF5;
+    text-align: center;
+}
+
+.highlights-item {
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: left;
+    transition: .3s;
+}
+
+.highlights__link {
+    color: inherit;
+    display: inline-block;
+    margin: 1em .5em;
+    max-width: 400px;
+    text-decoration: none;
+}
+
+.highlights__link:hover,
+.highlights__link:focus {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    outline: 0;
+}
+
+.highlights-item__title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.highlights-item__img {
+    display: block;
+    width: 100%;
+}
+
+.highlights-form label {
+    display: inline-block;
+}
+
+.highlights__button {
+    background: transparent;
+    border: 1px solid #B72E2E;
+    color: #B72E2E;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    max-width: 20em;
+}
+
+.highlights__button:hover,
+.highlights__button:focus {
+    background-color: #B72E2E;
+    color: #fff;
+}

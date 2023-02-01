@@ -1,0 +1,56 @@
+.highlight {
+    background-color: #00161c;
+    background-size: cover;
+    color: #fff;
+    padding: 10em 2em 3em 2em;
+    text-align: center;
+}
+
+
+.highlight__title {
+    font-family: 'Montserrat', serif;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+.highlight__text {
+    font-size: 1.25em;
+    font-weight: normal;
+    margin: 0 auto 2em auto;
+    max-width: 600px;
+}
+
+.highlight__button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    line-height: 2.5;
+    margin: 0 auto;
+    max-width: 300px;
+    text-decoration: none;
+    transition: .2s ease-in;
+    width: 100%;
+}
+
+.highlight__button:hover,
+.highlight__button:focus {
+    background: #fff;
+    color: #333;
+}
+
+@media (min-width: 830px) {
+
+    .highlight {
+        background-image: url(../../../img/home/bg-intro.jpg);
+    }
+
+    .highlight__title {
+        font-size: 5vw
+    }
+
+}
