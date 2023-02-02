@@ -15,7 +15,7 @@
 </br>
 
 ## :pencil: Descrição do Projeto
-O projeto **[Apeperia](https://nayarawatanuki.github.io/accessibility-part2__apeperia/)**, é uma proposta de página web para uma plataforma que fornece construção e manutenção de aplicativos.
+O projeto **[Apeperia - parte 2](https://nayarawatanuki.github.io/accessibility-part2__apeperia/)**, é uma proposta de página web para uma plataforma que fornece construção e manutenção de aplicativos.
 
 </br>Desenvolvido para o curso de **ACESSIBILIDADE WEB PARTE 2 - COMPONENTES ACESSIVEIS COM UM POUCO DE JAVASCRIPT** da plataforma [Alura](https://www.alura.com.br/).
 
@@ -27,7 +27,7 @@ O projeto **[Apeperia](https://nayarawatanuki.github.io/accessibility-part2__ape
 </br>
 
 ## :hammer: Funcionalidades e Demonstração da Aplicação
-Continuação do projeto [Apeperia - part 1](https://github.com/nayarawatanuki/accessibility-part2__apeperia). </br>
+Continuação do projeto [Apeperia - parte 1](https://github.com/nayarawatanuki/accessibility-part2__apeperia). </br>
 
 O objetivo do curso foi mais focado na parte de `acessibilidade`,
 pensando nisso, o projeto Apeperia foi disponibilizado pronto (`html` + `css` + `js`) e apenas 
@@ -84,7 +84,7 @@ Após baixar o projeto, você pode abrir com o VS Code. Para isso, abra o explor
 </br>
 
 ## :rocket: Abrir e rodar o projeto
-Caso tenha interesse em visualizar o que foi realizado: [Apeperia](https://nayarawatanuki.github.io/accessibility-part2__apeperia/) 
+Caso tenha interesse em visualizar o que foi realizado: [Apeperia - parte 2](https://nayarawatanuki.github.io/accessibility-part2__apeperia/) 
 
 Ou, caso prefira baixá-lo clicando [aqui](https://github.com/nayarawatanuki/accessibility-part2__apeperia/archive/refs/heads/main.zip).
 
