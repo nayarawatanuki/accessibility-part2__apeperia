@@ -4,12 +4,14 @@
 @import 'layout/home/about.css';
 @import 'layout/home/plans.css';
 @import 'layout/home/blog.css';
-@import 'layout/home/articles';
+@import 'layout/home/articles.css';
 @import 'layout/home/highlights/index.css';
 @import 'layout/home/contact/index.css';
 @import 'layout/home/institutional.css';
 @import 'layout/home/footer.css';
 
+
+/* Esconde visualmente, muito útil para econder palavras ou elementos na tela, que queremos que o leitor de tela leia. */
 .hidden {
     border: 0;
     clip: rect(0 0 0 0);

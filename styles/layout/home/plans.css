@@ -59,7 +59,7 @@
 .plan__items {
     color: #666;
     line-height: 2;
-    list-style: none;
+    list-style: disc;
     margin: 1em auto 1.5em auto;
     padding-left: 30px;
     text-align: left;

@@ -19,7 +19,7 @@
     width: 100%;
 }
 
-
+/*
 .articles__item:not(:target):first-child {
     display: inline-block;
 }
@@ -27,6 +27,7 @@
 .articles__item:target {
     display: inline-block;
 }
+*/
 
 .article__img {
     display: block;

@@ -4,9 +4,14 @@
     position: relative;
 }
 
+.contact-field__label {
+    position: relative;
+}
+
 .contact-field__label:before {
     background-color: #fff;
     border: 1px solid #7D7D7D;
+    box-sizing: border-box;
     color: transparent;
     content:'';
     display: inline-block;
@@ -14,15 +19,36 @@
     line-height: 1;
     text-align: center;
     transform: translate(-7px, -3px);
-    transition: .2s ease-in;
+    transition: background-color .2s ease-in, color .2s ease-in;
     vertical-align: middle;
     width: 20px;
 }
 
+.contact-field__checkbox:hover + .contact-field__label:before,
+.contact-field__checkbox:focus + .contact-field__label:before {
+    border: 2px solid #333;
+}
+
 .contact-field__checkbox:checked + .contact-field__label:before {
     background-image: radial-gradient(circle, #2DA4E7, #2F80ED);
-    color: #fff;
-    content: 'x';
+    border-color: #015FBE;
+    color: #FFF;
+    content: '';
+    line-height: .8;
+}
+
+.contact-field__checkbox:checked + .contact-field__label::after {
+    border-bottom: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    content: '';
+    display: block;
+    height: 5px;
+    left: -3px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 5px;
+    width: 10px;
+    z-index: 2;
 }
 
 .contact-field__checkbox {

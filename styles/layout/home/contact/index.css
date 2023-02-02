@@ -22,10 +22,12 @@
 }
 
 .contact-form__legend {
+    display: flex;
     line-height: 1.6;
     margin: 0 auto;
     max-width: 300px;
     text-align: center;
+    width: 300px;
 }
 
 .contact-field__button {
