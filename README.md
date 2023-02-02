@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Apeperia" src="https://raw.githubusercontent.com/nayarawatanuki/accessibility-part1__apeperia/main/img/readme/apeperia__cover.png"/>
+  <img alt="Apeperia" src="https://raw.githubusercontent.com/nayarawatanuki/accessibility-part2__apeperia/main/img/readme/apeperia__cover.png"/>
 </h1>
 
 ### Índice
@@ -15,9 +15,9 @@
 </br>
 
 ## :pencil: Descrição do Projeto
-O projeto **[Apeperia](https://nayarawatanuki.github.io/accessibility-part1__apeperia/)**, é uma proposta de página web para uma plataforma que fornece construção e manutenção de aplicativos.
+O projeto **[Apeperia - parte 2](https://nayarawatanuki.github.io/accessibility-part2__apeperia/)**, é uma proposta de página web para uma plataforma que fornece construção e manutenção de aplicativos.
 
-</br>Desenvolvido para o curso de **ACESSIBILIDADE WEB PARTE 1 - TORNANDO SEU FRONT-END INCLUSIVO** da plataforma [Alura](https://www.alura.com.br/).
+</br>Desenvolvido para o curso de **ACESSIBILIDADE WEB PARTE 2 - COMPONENTES ACESSIVEIS COM UM POUCO DE JAVASCRIPT** da plataforma [Alura](https://www.alura.com.br/).
 
 </br>
 
@@ -27,7 +27,7 @@ O projeto **[Apeperia](https://nayarawatanuki.github.io/accessibility-part1__ape
 </br>
 
 ## :hammer: Funcionalidades e Demonstração da Aplicação
-Continuação do projeto [Apeperia (figma)](https://github.com/nayarawatanuki/accessibility__apeperia-figma). </br>
+Continuação do projeto [Apeperia - parte 1](https://github.com/nayarawatanuki/accessibility-part2__apeperia). </br>
 
 O objetivo do curso foi mais focado na parte de `acessibilidade`,
 pensando nisso, o projeto Apeperia foi disponibilizado pronto (`html` + `css` + `js`) e apenas 
@@ -35,28 +35,45 @@ realizado alterações, mais no arquivo `html` em si, deixando-o adequado para p
 
 Dicas e alterações:
 
-- evitar mais de um `<H1>` na página;
-- usar `HTML5` semântico que faça sentido;
-- configurar o NVDA conforme visto em aula;
-- `alt` nas imagens que possuem função de conteúdo;
-- escrever o `alt` de maneira descritiva, evitando redundâncias;
-- configurar o idioma principal do documento com o atributo `lang`;
-- colocar o elemento `<title>` em SVGs que forem inline (código direto no HTML);
-- interferencia que o `css` pode gerar;
-- atributo `readonly` e `disable`;
-- função de pular conteúdo;
-- `aria-labelledby`;
-- `figure` e `figcaption`;
-- `role` (muda a semantica dos elementos do `HTML`);
-- `video`
-  - atributo `controls`;
-  - elemento `track`, exemplo: `<track src="img/video/subtitle-portuguese-brasil.vtt" kind="subtitles" srclang="pt-br" label="Português (Brasil)">`.
+- section Destaque:
+  - troca da tag `h2` pela tag `p`, para melhor semântica;
+
+- section Planos:
+  - inclusão da tag `span` com a classe `hidden` dentro das tags `h3` e `a` (botão "Assinar plano"), para melhor acessibilidade de perfis de PCD;
+  - troca da tag `h4` pela tag `span`;
+
+- section Blog:
+  - inclusão da tag `h3` para título da Lista de artigos;
+  - troca da tag `ul` pela tag `ol`;
+  - `ol`: uso do atributo `aria-labelledby` para ancorar ao título da lista `h3`;
+  - `li`: criação do atributo `data-notice`, para identificar a postagem selecionada no carrossel;
+  - remoção das descrições dentro do atributo `alt`, pois são imagens apenas representativas/opcionais, não necessárias para quem estar lendo ou ouvindo a página;
+  - remoção das funções de dinamicas dos comportamentos dos slides em `css` para construir em [`carousel.js`](https://github.com/nayarawatanuki/accessibility-part2__apeperia/blob/main/js/carousel.js);
+  - inclusão da tag `span` com a classe `hidden`, marcando o slide selecionado (slide atual), dentro das tags `li` dos controles do carrossel, para melhor acessibilidade. 
+  - [`carousel.js`](https://github.com/nayarawatanuki/accessibility-part2__apeperia/blob/main/js/carousel.js): construção da função de troca de posição do `<span>slide atual</span>` e da função de dinamica de comportamento dos slides;
+
+- section Destaques: 
+  - [Destaques (`highlights/index.css`)](https://github.com/nayarawatanuki/accessibility-part2__apeperia/blob/main/styles/layout/home/highlights/index.css): alteração da configuração de `display: block` para `display: none`, na classe `highlights__button`;
+  - `div` de classe `dialogNewsletter` retirada da section e colacada após fechamento da tag `footer`;
+  - inclusão de tag `div` com a classe `content-outside-dialog` em todo conteúdo antes do `modal` com classe `dialogNewsletter`;
+  - [`dialog.js`](https://github.com/nayarawatanuki/accessibility-part2__apeperia/blob/main/js/dialog.js): construção das funções de configuração da navegabilidade da tecla `TAB` e da `ESC`, para melhor acessibilidade do `modal/dialog` de Newsletter, com auxilio da lib [`inert.js`](https://github.com/WICG/inert);
+
+- section Contato:
+  - troca da tag `p` pela tag `legend`;
+  - inclusão da tag `fieldset` em volta de todo conteúdo da tag `form`;
+  - configuração `border: 0;` para tag `<fieldset>` no arquivo [`reset.css`](https://github.com/nayarawatanuki/accessibility-part2__apeperia/blob/main/styles/reset.css);
+  - [Contato (`contact/index.css`)](https://github.com/nayarawatanuki/accessibility-part2__apeperia/blob/main/styles/layout/contact/index.css): ajustes na classe `contact-form__legend` incluindo a configuração `display: flex`;
+  - [Contato (`contact/contact-field.css`)](https://github.com/nayarawatanuki/accessibility-part2__apeperia/blob/main/styles/layout/contact/contact-field.css): ajustes para o `checkbox` "Receber destaques por email" ficar com melhor acessibilidade na leitura; 
+  - criação do atributo id `zip-code` para função de validação de cep;
+  - [`zip-code__validation.js`](https://github.com/nayarawatanuki/accessibility-part2__apeperia/blob/main/js/zip-code__validation.js): criada função para customizar a mensagem de erro quando o cep não for preenchido corretamente;
+  - uso da lib [mailcheck](https://github.com/mailcheck/mailcheck) para validação do `input` de e-mail;
+  - [`mailcheck.js`](https://github.com/nayarawatanuki/accessibility-part2__apeperia/blob/main/js/mailcheck.js): contrução da função para validar o `input` de e-mail e customização das mensagens/alertas de erro;
 
 </br>
 
 ## :open_file_folder: Acesso ao projeto
-Você pode acessar o [código fonte do projeto](https://github.com/nayarawatanuki/accessibility-part1__apeperia) ou 
-[baixá-lo](https://github.com/nayarawatanuki/accessibility-part1__apeperia/archive/refs/heads/main.zip).
+Você pode acessar o [código fonte do projeto](https://github.com/nayarawatanuki/accessibility-part2__apeperia) ou 
+[baixá-lo](https://github.com/nayarawatanuki/accessibility-part2__apeperia/archive/refs/heads/main.zip).
 
 Caso obte por baixá-lo: 
 Após baixar o projeto, você pode abrir com o VS Code. Para isso, abra o explorer (primeiro icone no menu) clique em:
@@ -67,9 +84,9 @@ Após baixar o projeto, você pode abrir com o VS Code. Para isso, abra o explor
 </br>
 
 ## :rocket: Abrir e rodar o projeto
-Caso tenha interesse em visualizar o que foi realizado: [Apeperia](https://nayarawatanuki.github.io/accessibility-part1__apeperia/) 
+Caso tenha interesse em visualizar o que foi realizado: [Apeperia - parte 2](https://nayarawatanuki.github.io/accessibility-part2__apeperia/) 
 
-Ou, caso prefira baixá-lo clicando [aqui](https://github.com/nayarawatanuki/accessibility-part1__apeperia/archive/refs/heads/main.zip).
+Ou, caso prefira baixá-lo clicando [aqui](https://github.com/nayarawatanuki/accessibility-part2__apeperia/archive/refs/heads/main.zip).
 
 > Após baixar o projeto, abra a pasta do projeto (Caso o projeto seja baixado em zip, é necessário extraí-lo antes de abrir), então clique no:
 > - Aqruivo **``index.html``**
@@ -78,7 +95,7 @@ Ou, caso prefira baixá-lo clicando [aqui](https://github.com/nayarawatanuki/acc
 </br>
 
 ## :keyboard: Tecnologias utilizadas
-![HTML + CSS + JS](https://raw.githubusercontent.com/nayarawatanuki/accessibility-part1__apeperia/main/img/readme/html-css-js.PNG)</br>
+![HTML + CSS + JS](https://raw.githubusercontent.com/nayarawatanuki/accessibility-part2__apeperia/main/img/readme/html-css-js.PNG)</br>
 
 </br>
 
