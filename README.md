@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Apeperia" src="https://raw.githubusercontent.com/nayarawatanuki/accessibility-part2__apeperia/main/img/readme/apeperia__cover.png"/>
+  <img alt="Apeperia" src="https://raw.githubusercontent.com/nayarawatanuki/accessibility-part2__apeperia/main/img/readme/apeperia__cover.png#vitrinedev"/>
 </h1>
 
 ### Índice
